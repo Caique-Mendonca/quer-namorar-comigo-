@@ -8,9 +8,10 @@ function clickNao(){
     botaoNao.style.top = `${Math.floor(Math.random() * 96)}%`
     botaoNao.style.left = `${Math.floor(Math.random() * 97)}%`
 }
-
-let btnNao = document.querySelector('#nao')
-btnNao.addEventListener('mouseenter', clickNao)
-
-let btnSim = document.querySelector('#sim')
-btnSim.addEventListener('click', clickSim)
+window.addEventListener('load', ()=>{
+    let btnNao = document.querySelector('#nao')
+    btnNao.addEventListener('mouseenter', clickNao)
+    
+    let btnSim = document.querySelector('#sim')
+    btnSim.addEventListener('click', clickSim)
+})
