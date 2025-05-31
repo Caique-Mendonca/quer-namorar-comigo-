@@ -11,6 +11,7 @@ function clickNao(){
 window.addEventListener('load', ()=>{
     let btnNao = document.querySelector('#nao')
     btnNao.addEventListener('mouseenter', clickNao)
+    btnNao.addEventListener('click', clickNao)
     
     let btnSim = document.querySelector('#sim')
     btnSim.addEventListener('click', clickSim)
